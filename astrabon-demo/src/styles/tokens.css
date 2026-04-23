@@ -1,0 +1,95 @@
+:root {
+    /* Astrabon Brand Colors */
+    --color-bg: #0A0A0D;
+    --color-surface: #13131A;
+    --color-surface-alt: #1C1C26;
+    --color-primary: #C8985E;
+    --color-primary-soft: #3A2A14;
+    --color-accent: #8B5E3C;
+    --color-border-subtle: #26262F;
+    --color-border-strong: #C8985E;
+    --color-text-primary: #F4F0EB;
+    --color-text-secondary: #A8A4A0;
+    --color-text-muted: #6A6670;
+    --color-text-on-primary: #1A0E04;
+    --color-success: #6AD3A1;
+    --color-warning: #FFCF70;
+    --color-error: #FF7B80;
+    --color-overlay: rgba(5, 5, 7, 0.75);
+    --color-sheen: color-mix(in srgb, var(--color-primary), transparent 85%);
+
+    /* Glass Colors */
+    --glass-heavy: rgba(5, 5, 5, 0.72);
+    --glass-atlas: rgba(12, 12, 12, 0.45);
+    --glass-card-start: rgba(20, 18, 15, 0.65);
+    --glass-card-end: rgba(10, 9, 7, 0.45);
+    --glass-border: rgba(255, 255, 255, 0.07);
+
+    /* Surface Translucent */
+    --color-surface-50: rgba(255, 255, 255, 0.02);
+    --color-surface-100: rgba(255, 255, 255, 0.05);
+    --color-surface-200: rgba(255, 255, 255, 0.08);
+
+    /* Glass Effect Utilities */
+    --shadow-glass-card: 0 20px 40px -10px rgba(0, 0, 0, 0.55);
+    --highlight-glass-card: rgba(255, 255, 255, 0.08);
+
+    /* Typography */
+    --font-family-display: "Playfair Display", serif;
+    --font-family-body: "Inter", system-ui, sans-serif;
+
+    --font-size-2xl: 32px;
+    --font-size-xl: 24px;
+    --font-size-lg: 20px;
+    --font-size-md: 16px;
+    --font-size-sm: 14px;
+    --font-size-xs: 12px;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-tight: 1.2;
+    --line-normal: 1.4;
+    --line-loose: 1.6;
+
+    /* Spacing */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+
+    /* Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-pill: 999px;
+
+    /* Shadow */
+    --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.30);
+    --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.40);
+
+    /* Motion */
+    --motion-fast: 120ms;
+    --motion-normal: 200ms;
+    --motion-slow: 280ms;
+    --easing-standard: cubic-bezier(0.2, 0.0, 0.2, 1);
+    --easing-decelerate: cubic-bezier(0.0, 0.0, 0.2, 1);
+    --easing-accelerate: cubic-bezier(0.4, 0.0, 1, 1);
+
+    /* Z-index */
+    --z-base: 0;
+    --z-raised: 10;
+    --z-overlay: 100;
+    --z-widget: 9000;
+    --z-toast: 9999;
+}
