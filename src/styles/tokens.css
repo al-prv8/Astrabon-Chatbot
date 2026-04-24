@@ -93,3 +93,45 @@
     --z-widget: 9000;
     --z-toast: 9999;
 }
+
+/* ─── Light Theme ──────────────────────────────────────────────────────── */
+.light {
+    --color-bg: #FAF8F5;
+    --color-surface: #FFFFFF;
+    --color-surface-alt: #F0EDE8;
+    --color-primary: #B07D3B;
+    --color-primary-soft: #F5EEE2;
+    --color-accent: #8B5E3C;
+    --color-border-subtle: #E2DDD6;
+    --color-border-strong: #B07D3B;
+    --color-text-primary: #1A1612;
+    --color-text-secondary: #5C564E;
+    --color-text-muted: #9A9490;
+    --color-text-on-primary: #FFFFFF;
+    --color-success: #2D8F5E;
+    --color-warning: #C4890A;
+    --color-error: #D93D42;
+    --color-overlay: rgba(250, 248, 245, 0.75);
+    --color-sheen: color-mix(in srgb, var(--color-primary), transparent 85%);
+
+    /* Glass Colors – light mode */
+    --glass-heavy: rgba(255, 255, 255, 0.82);
+    --glass-atlas: rgba(255, 255, 255, 0.55);
+    --glass-card-start: rgba(255, 255, 255, 0.75);
+    --glass-card-end: rgba(248, 244, 238, 0.55);
+    --glass-border: rgba(0, 0, 0, 0.08);
+
+    /* Surface Translucent */
+    --color-surface-50: rgba(0, 0, 0, 0.02);
+    --color-surface-100: rgba(0, 0, 0, 0.04);
+    --color-surface-200: rgba(0, 0, 0, 0.06);
+
+    /* Glass Effect Utilities */
+    --shadow-glass-card: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+    --highlight-glass-card: rgba(255, 255, 255, 0.90);
+
+    /* Shadow – lighter for light mode */
+    --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.12);
+}

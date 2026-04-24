@@ -213,3 +213,49 @@ input:-webkit-autofill:focus {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* ─── Light Mode Overrides ────────────────────────────────────────────── */
+.light {
+  /* Scrollbar */
+  & ::-webkit-scrollbar-track { background: var(--color-bg); }
+  & ::-webkit-scrollbar-thumb { background: var(--color-surface-alt); }
+
+  /* Luxury gradient → warm cream */
+  & .bg-luxury-gradient {
+    background: radial-gradient(circle at top right, #F5EEE2 0%, #FAF8F5 100%);
+  }
+
+  /* Glow – softer in light mode */
+  & .glow-primary {
+    box-shadow: 0 0 30px rgba(176, 125, 59, 0.18);
+  }
+
+  /* Glass cards need tighter contrast */
+  & .glass-card {
+    box-shadow: var(--shadow-glass-card), inset 0 1px 0 0 rgba(255,255,255,0.6);
+  }
+
+  & .glass-atlas {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+  }
+
+  /* Hardcoded overlay helpers */
+  & .bg-black\/30 { background-color: rgba(0,0,0,0.08); }
+  & .bg-black\/40 { background-color: rgba(0,0,0,0.10); }
+  & .bg-white\/8 { background-color: rgba(0,0,0,0.04); }
+
+  & .hover\:bg-white\/8:hover { background-color: rgba(0,0,0,0.05); }
+
+  & .border-white\/10 { border-color: rgba(0,0,0,0.08); }
+  & .border-white\/15 { border-color: rgba(0,0,0,0.10); }
+  & .border-white\/25 { border-color: rgba(0,0,0,0.12); }
+  & .border-white\/50 { border-color: rgba(0,0,0,0.18); }
+  & .hover\:border-white\/50:hover { border-color: rgba(0,0,0,0.22); }
+  & .hover\:border-white\/30:hover { border-color: rgba(0,0,0,0.14); }
+
+  /* Selection */
+  & ::selection {
+    background: rgba(176, 125, 59, 0.15);
+    color: var(--color-text-primary);
+  }
+}

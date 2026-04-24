@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChefHat } from 'lucide-react';
 import Link from 'next/link';
+import { ThemeToggle } from './ThemeToggle';
 
 const NAV_ITEMS = [
   { label: 'Products', href: '#categories' },
@@ -58,8 +59,9 @@ export function Header() {
             ))}
           </nav>
 
-          {/* CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* CTA + Theme Toggle */}
+          <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle isOverHero={!isScrolled} />
             <Link
               href="#contact"
               className={`px-5 py-2 rounded-full border text-xs font-bold uppercase tracking-widest transition-all duration-300 hover:bg-primary hover:text-text-on-primary hover:border-primary ${
@@ -71,12 +73,15 @@ export function Header() {
           </div>
 
           {/* Mobile Toggle */}
-          <button
-            className={`lg:hidden z-50 transition-colors ${isScrolled ? 'text-text-primary' : 'text-white'}`}
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <Menu className="w-7 h-7" />
-          </button>
+          <div className="flex items-center gap-2 lg:hidden">
+            <ThemeToggle isOverHero={!isScrolled} />
+            <button
+              className={`z-50 transition-colors ${isScrolled ? 'text-text-primary' : 'text-white'}`}
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <Menu className="w-7 h-7" />
+            </button>
+          </div>
         </div>
       </header>
 

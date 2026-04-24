@@ -69,7 +69,7 @@ function WidgetContent() {
                 : 'max-md:inset-0 max-md:w-full max-md:h-[100dvh] max-md:rounded-none md:bottom-6 md:right-6 md:w-[400px] md:h-[680px] md:rounded-[28px]'
               }
             `}
-            style={{ background: 'rgba(10, 10, 13, 0.97)', transformOrigin: 'bottom right' }}
+            style={{ background: 'color-mix(in srgb, var(--color-bg) 97%, transparent)', transformOrigin: 'bottom right' }}
           >
             {/* Header */}
             <div className="h-[58px] bg-surface-alt/40 backdrop-blur-xl border-b border-border-subtle flex items-center justify-between px-5 shrink-0">
