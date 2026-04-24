@@ -62,7 +62,7 @@ export function HeroSection() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="text-base md:text-xl text-white/75 max-w-2xl mx-auto mb-10 md:mb-14 font-light leading-relaxed"
           >
-            Astrabon&apos;s intelligent assistant guides you to the perfect cookware, kitchen tools, and hospitality supplies — in seconds. For home cooks and commercial buyers alike.
+            Meet Dhon — Astrabon&apos;s intelligent assistant who guides you to the perfect cookware, kitchen tools, and hospitality supplies — in seconds. For home cooks and commercial buyers alike.
           </motion.p>
 
           {/* CTAs */}

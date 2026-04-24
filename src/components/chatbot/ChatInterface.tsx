@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, Mic, ChefHat } from 'lucide-react';
+import { Send, Mic } from 'lucide-react';
 import { useAstrabon } from './AstrabonContext';
 import { ProductCarousel } from './ProductCarousel';
 import { LeadCaptureFlow } from './LeadCaptureFlow';
@@ -21,8 +21,8 @@ const WELCOME_PROMPTS = [
 function TypingIndicator() {
   return (
     <div className="flex items-end gap-2">
-      <div className="w-7 h-7 rounded-full bg-primary/15 border border-primary/20 flex items-center justify-center shrink-0">
-        <ChefHat className="w-4 h-4 text-primary" />
+      <div className="w-7 h-7 rounded-full border border-primary/20 overflow-hidden shrink-0">
+        <img src="/chatbot/chatbot-avatar.jpeg" alt="Dhon" className="w-full h-full object-cover" />
       </div>
       <div className="bg-primary/10 border border-primary/15 rounded-2xl rounded-tl-sm px-4 py-3">
         <div className="flex gap-1">
@@ -237,11 +237,11 @@ export function ChatInterface() {
             className="mb-6"
           >
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-full bg-primary/15 border border-primary/25 flex items-center justify-center">
-                <ChefHat className="w-5 h-5 text-primary" />
+              <div className="w-9 h-9 rounded-full border border-primary/25 overflow-hidden">
+                <img src="/chatbot/chatbot-avatar.jpeg" alt="Dhon" className="w-full h-full object-cover" />
               </div>
               <div className="bg-primary/10 border border-primary/20 rounded-2xl rounded-tl-sm px-4 py-3 text-sm text-text-primary font-light leading-relaxed max-w-[85%]">
-                👋 Hi! I&#39;m the Astrabon assistant. I can help you find the right kitchenware, cookware, coffee essentials, glassware, and more.
+                👋 Hi! I&#39;m Dhon, your Astrabon assistant. I can help you find the right kitchenware, cookware, coffee essentials, glassware, and more.
                 <br /><br />
                 <span className="text-primary font-medium">What are you shopping for today?</span>
               </div>
@@ -296,10 +296,10 @@ export function ChatInterface() {
               className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'}`}
             >
               {/* Bot Avatar for bot messages */}
-              {msg.sender === 'bot' && msg.type === 'text' && (
+              {msg.sender === 'bot' && (msg.type === 'text' || msg.type === 'options') && (
                 <div className="flex items-end gap-2">
-                  <div className="w-7 h-7 rounded-full bg-primary/15 border border-primary/20 flex items-center justify-center shrink-0 mb-1">
-                    <ChefHat className="w-4 h-4 text-primary" />
+                  <div className="w-7 h-7 rounded-full border border-primary/20 overflow-hidden shrink-0 mb-1">
+                    <img src="/chatbot/chatbot-avatar.jpeg" alt="Dhon" className="w-full h-full object-cover" />
                   </div>
                   <div className="bg-primary/10 border border-primary/15 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%]">
                     <p className="text-sm text-text-primary font-light leading-relaxed whitespace-pre-line">{msg.text}</p>
@@ -339,8 +339,8 @@ export function ChatInterface() {
                 <div className="w-full mt-2 pl-9">
                   {msg.text && msg.sender === 'bot' && (
                     <div className="flex items-end gap-2 mb-3">
-                      <div className="w-7 h-7 rounded-full bg-primary/15 border border-primary/20 flex items-center justify-center shrink-0">
-                        <ChefHat className="w-4 h-4 text-primary" />
+                      <div className="w-7 h-7 rounded-full border border-primary/20 overflow-hidden shrink-0">
+                        <img src="/chatbot/chatbot-avatar.jpeg" alt="Dhon" className="w-full h-full object-cover" />
                       </div>
                       <div className="bg-primary/10 border border-primary/15 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[80%]">
                         <p className="text-sm text-text-primary font-light leading-relaxed whitespace-pre-line">{msg.text}</p>
