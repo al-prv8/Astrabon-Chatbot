@@ -14,8 +14,8 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070&auto=format&fit=crop"
-          alt="Premium cookware in a professional kitchen"
+          src="/hero-maldivian.png"
+          alt="Maldivian hospitality professional with premium cookware in a luxury resort kitchen"
           className="w-full h-full object-cover scale-105 animate-pulse-slow"
         />
         {/* Cinema Gradient Overlay */}
